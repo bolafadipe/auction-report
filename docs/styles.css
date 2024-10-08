@@ -386,27 +386,64 @@ p, li {
 }
 
 /* Analysis text after top brands */
-.analysis-text {
+/* .analysis-text {
     text-align: center;
     margin-top: 30px;
     font-size: 16px;
     line-height: 1.5;
     color: #555;
-}
+} */
 
 /* Analysis text after top brands */
-.analysis-text {
+/* .analysis-text {
     text-align: center;
     margin-top: 30px;
     font-size: 16px;
     line-height: 1.5;
     color: #555;
-}
+} */
+
+/* Container for the entire content */
+/* .analysis-section {
+    display: flex;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+   */
+  /* Styles for the chart section */
+  /* .chart-section {
+    flex: 1;
+    min-width: 0; 
+  } */
+  
+  /* Styles for the text section */
+  /* .text-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } */
+  
+  /* Responsive design for smaller screens */
+  /* @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  } */
+  
+  /* Additional styles to ensure the chart doesn't overflow */
+  /* .chart-section img {
+    max-width: 100%;
+    height: auto;
+  } */
 
 /* Container for the entire content */
 .analysis-section {
     display: flex;
-    align-items: stretch;
+    flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
@@ -414,33 +451,39 @@ p, li {
   
   /* Styles for the chart section */
   .chart-section {
-    flex: 1;
-    min-width: 0; /* Allows the chart to shrink if needed */
+    width: 100%;
+    margin-bottom: 20px;
   }
   
   /* Styles for the text section */
   .text-section {
-    flex: 1;
+    width: 100%;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
+  /* Analysis text after top brands */
+  .analysis-text {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
   }
   
   /* Additional styles to ensure the chart doesn't overflow */
   .chart-section img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
-
-
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .chart-section, .text-section {
+      padding: 10px;
+    }
+  }
+  
 
 
 
