@@ -650,3 +650,45 @@ tr:hover {
         margin-bottom: 20px;
     }
 }
+
+.watches-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .watch-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 200px;
+  }
+  
+  .watch-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+  }
+  
+  .watch-item h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+  }
+  
+  .watch-item p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 1024px) {
+    .watches-container {
+      justify-content: flex-start;
+    }
+  }
