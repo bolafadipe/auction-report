@@ -19,13 +19,13 @@ h3 {
 
 h4 {
     color: #38b6a6;
-    font-size: 20px;
+    font-size: 24px;
     margin: 0;
 }
 
 h5 {
     color: #38b6a6;
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 0;
     text-align: left;
 }
@@ -593,7 +593,10 @@ th {
     color: white;
 }
 tr:nth-child(even) {
-    background-color: #554f4f;
+    background-color: rgb(54, 53, 53);
+}
+tr:nth-child(odd) {
+    background-color: #777676b4;
 }
 tr:hover {
     background-color: #5d9eda;
