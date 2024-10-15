@@ -692,3 +692,42 @@ tr:hover {
       justify-content: flex-start;
     }
   }
+
+  .auction-charts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.auction-chart-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+.auction-chart-image {
+    width: 100%;
+    height: 400px; /* Set a fixed height */
+    object-fit: contain;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .auction-charts-container {
+        flex-direction: column;
+    }
+
+    .auction-chart-wrapper {
+        max-width: 100%;
+    }
+
+    .auction-chart-image {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}
